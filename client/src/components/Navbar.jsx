@@ -46,14 +46,17 @@ const Navbar = () => {
 
   const navbarContainer = useRef(null);
 
+  let hoverbg = 'hover:bg-blue-800 h-full py-4 px-4';
+
   return (
     <nav
     ref={navbarContainer}
-      className={` md:p-4 transition-all  shadow duration-300 ${
+      className={`
+      mx-0 transition-all  shadow duration-300 ${
         scrolled ? 'fixed top-0 inset-x-0 shadow-md' : ''
       }`}
     >
-      <div className="container md:mx-auto ">
+      <div className="container md:mx-a ">
         <div className="md:flex hidden  items-center justify-between">
           <div className="text-gray-800 text-xl font-bold">
             <Link to="/">LOGO</Link>
@@ -66,22 +69,25 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className={`hidden md:flex space-x-4`}>
-            <Link to="/" className="text-gray-800">
+          <div className={`hidden md:flex space-x-4 `}>
+            <Link to="/" className={`text-gray-800 text-lg ${hoverbg}`}>
               Home
             </Link>
-            <Link to="/about" className="text-gray-800">
+            <Link to="/about" className={`text-gray-800 text-lg ${hoverbg}`}>
               About
             </Link>
-            <Link to="/services" className="text-gray-800">
+            <Link to="/services" className={`text-gray-800 text-lg ${hoverbg}`}>
               Services
             </Link>
-            <Link to="/contact" className="text-gray-800">
+            <Link to="/contact" className={`text-gray-800 text-lg ${hoverbg}`}>
               Contact
             </Link>
           </div>
 
         </div>
+
+
+
         <div className="">
             {/* Responsive Menu for Small Screens */}
             {isOpen ? (
@@ -109,7 +115,7 @@ const Navbar = () => {
             </div>
           ): <div className="flex p-4 md:hidden  items-center justify-between">
           <div className="text-gray-800 text-xl font-bold">
-            <Link to="/">AAES</Link>
+            <Link to="/">LOGO</Link>
           </div>
 
           <div className="md:hidden">
@@ -142,3 +148,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
