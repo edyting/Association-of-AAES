@@ -28,7 +28,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Check if the user has scrolled down more than 50 pixels
-      if (window.scrollY > 50) {
+      if (window.scrollY > 70) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -46,14 +46,14 @@ const Navbar = () => {
 
   const navbarContainer = useRef(null);
 
-  let hoverbg = 'hover:bg-blue-800 h-full py-4 px-4';
+  let hoverbg = 'focus:underline hover:underline decoration-solid decoration-8 decoration-rounded-lg decoration-blue-600 underline-offset-[15px] h-full py-4 px-4';
 
   return (
     <nav
     ref={navbarContainer}
       className={`
       mx-0 transition-all  shadow duration-300 ${
-        scrolled ? 'fixed top-0 inset-x-0 shadow-md' : ''
+        scrolled ? 'fixed  top-0 inset-x-0 shadow-md' : ''
       }`}
     >
       <div className="container md:mx-a ">

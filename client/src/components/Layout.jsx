@@ -5,13 +5,13 @@ import Navbar from './Navbar'
 
 function Layout() {
   return (
-    <div className='relative'>
+    <div className=''>
         {/* navbar */}
         <div className="">
           <Navbar/>
         </div>
         {/* outlet */}
-        <div className="relative">
+        <div className="">
             <Outlet/>
         </div>
         {/* footer */}

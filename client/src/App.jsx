@@ -7,8 +7,8 @@ import './App.css'
 import { RouterProvider,createBrowserRouter } from "react-router-dom";
 import Layout from "./components/Layout";
 import Error from "./pages/Error";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
 
 const router = createBrowserRouter(
   [
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-       <div className="App">
+       <div className="">
         <RouterProvider router={router}>
 
         </RouterProvider>
