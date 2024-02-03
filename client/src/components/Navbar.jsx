@@ -52,7 +52,7 @@ const Navbar = () => {
     <nav
     ref={navbarContainer}
       className={`
-      mx-0 transition-all  shadow duration-300 ${
+      mx-0 transition-all px-8  shadow duration-300 ${
         scrolled ? 'fixed  top-0 inset-x-0 shadow-md' : ''
       }`}
     >
