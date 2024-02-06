@@ -3,6 +3,8 @@ import React, { useState, useEffect,useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
+import { IoHomeOutline } from "react-icons/io5";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +30,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Check if the user has scrolled down more than 50 pixels
-      if (window.scrollY > 70) {
+      if (window.scrollY > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -46,13 +48,13 @@ const Navbar = () => {
 
   const navbarContainer = useRef(null);
 
-  let hoverbg = 'focus:underline hover:underline decoration-solid decoration-8 decoration-rounded-lg decoration-blue-600 underline-offset-[15px] h-full py-4 px-4';
+  let hoverbg = 'focus:underline hover:underline decoration-solid decoration-4 decoration-rounded-lg decoration-primary underline-offset-[15px] h-full py-4 px-4';
 
   return (
     <nav
     ref={navbarContainer}
-      className={`
-      mx-0 transition-all px-8  shadow duration-300 ${
+      className={`h-[5rem] flex items-center
+      mx-0 transition-all px-8 bg-white   shadow duration-300 ${
         scrolled ? 'fixed  top-0 inset-x-0 shadow-md' : ''
       }`}
     >
@@ -69,9 +71,11 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className={`hidden md:flex space-x-4 `}>
+          <div className={`hidden md:flex space-x-4 mr-12 `}>
             <Link to="/" className={`text-gray-800 text-lg ${hoverbg}`}>
-              Home
+              {/* <div className="icon"><IoHomeOutline />
+</div> */}
+             <h1> Home</h1>
             </Link>
             <Link to="/about" className={`text-gray-800 text-lg ${hoverbg}`}>
               About

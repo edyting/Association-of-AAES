@@ -3,3 +3,10 @@
 @tailwind utilities;
 
 
+.herobg{
+    background-image: linear-gradient(to right,rgba(0,0,0,0.8)15%,rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url(../src/components/images/demo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
