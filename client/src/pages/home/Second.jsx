@@ -25,7 +25,7 @@ function Second() {
           <div className="text-center w-2/4">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, quae quod voluptate tenetur earum rem saepe consequuntur quasi unde, quia veritatis expedita sed, numquam accusantium aperiam! Eaque fugiat excepturi nostrum.</p>
             {/* button */}
-            <button className='bg-primary px-3 py-2 text-lg'>See more</button>
+            <button className='bg-primary text-white rounded-lg mt-2 px-3 py-2 text-lg'>See more</button>
           </div>
         </div>
       </div>
