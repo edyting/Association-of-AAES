@@ -22,7 +22,7 @@ function Second() {
         {/* right */}
         <div className=" flex items-center justify-center">
           {/* text */}
-          <div className="text-center w-[20rem]">
+          <div className="text-center w-2/4">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, quae quod voluptate tenetur earum rem saepe consequuntur quasi unde, quia veritatis expedita sed, numquam accusantium aperiam! Eaque fugiat excepturi nostrum.</p>
             {/* button */}
             <button className='bg-primary px-3 py-2 text-lg'>See more</button>
