@@ -1,6 +1,7 @@
 import React from 'react'
 import Herosection from './Herosection'
 import Second from './Second'
+import Eventsection from './Eventsection'
 
 
 function Home() {
@@ -8,7 +9,8 @@ function Home() {
     <div>
       <Herosection/>
       <Second/>
-      <h1>Home</h1>
+      <Eventsection/>
+      
     </div>
   )
 }
