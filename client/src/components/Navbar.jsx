@@ -53,7 +53,7 @@ const Navbar = () => {
   return (
     <nav
     ref={navbarContainer}
-      className={`h-[5rem] transition delay-150 duration-300 ease-in-out  flex items-center
+      className={`h-[5rem] transition delay-150 duration-300 ease-in-out  flex items-center z-[100]
       mx-0 transition-all px-8 bg-white   shadow duration-300 ${
         scrolled ? 'fixed  top-0 inset-x-0 shadow-md' : ''
       }`}
