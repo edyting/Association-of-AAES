@@ -1,11 +1,17 @@
-import React from 'react'
+import Herosection from "./Herosection";
+import Secondabout from "./Secondabout";
+import Service from "./Service";
+import Topsection from "./Topsection";
 
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  )
+const About = () => {
+    return ( 
+        <div className="">
+            <Herosection/>
+            <Topsection/>
+            {/* <Secondabout/> */}
+            <Service/>
+        </div>
+     );
 }
-
-export default About
+ 
+export default About;

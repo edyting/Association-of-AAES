@@ -5,7 +5,7 @@ function Second() {
     <div className=' flex '>
      {/* leftside */}
 
-      <div className="bg-muted w-[25rem] p-4 rounded-lg m-2">
+      <div className="bg-muted w-[25rem] mx-[10rem]  p-4 rounded-lg m-2">
         {/* contact us */}
       <div className="">
         <h1 className='font-bold text-lg'>Contact Us </h1>
@@ -41,27 +41,27 @@ function Second() {
       </div>
 
       {/* right side */}
-      <div className="">
+      <div className="bg-blue-100 w-[34rem] pt-4">
             <form action="">
 
-                <div className="">
-                <input type="text" placeholder='Name' />
-                <input type="Last Name" />
+                <div className=" flex gap-[15px]">
+                <input className='border  border-primary rounded p-2 border-2' type="text" placeholder='Name' />
+                <input className='border border-primary rounded p-2 border-2' type="Last Name"  placeholder='Last Name'/>
                 </div>
 
                 <div className="">
-                <input type="text" placeholder='Email'/>
+                <input type="text" className='mt-4 border border-2  border-primary p-2 w-[97.1%] rounded' placeholder='Email'/>
                 </div>
 
                 <div className="">
-                <input type="text" placeholder='Phone Number'/>
+                <input type="text" className='mt-4 border border-2  border-primary p-2 w-[97.1%] rounded' placeholder='Phone Number'/>
                 </div>
 
                 <div className="">
-                    <textarea name="" id="" cols="20" rows="5"></textarea>
+                    <textarea name="" className='mt-4 border border-2  border-primary p-2 w-[97.1%] rounded' id="" cols="20" rows="5"></textarea>
                 </div>
 
-                <input type="submit" value='submit'/>
+                <input type="submit" className='mx-[40%] bg-primary w-[5rem]  p-2 w-[97.1%] rounded' value='submit'/>
 
             </form>
       </div>
