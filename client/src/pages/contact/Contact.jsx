@@ -7,8 +7,10 @@ function Contact() {
   return (
     <div>
       <Herosection/>
-      <Second/>
+      
       <Maplocate/>
+
+      <Second/>
     </div>
   )
 }

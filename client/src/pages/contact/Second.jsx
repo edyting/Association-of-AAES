@@ -41,7 +41,7 @@ function Second() {
       </div>
 
       {/* right side */}
-      <div className="bg-blue-100 w-[34rem] pt-4">
+      <div className="bg-blue-100 w-[34rem] pt- p-2 rounded-xl mt-4">
             <form action="">
 
                 <div className=" flex gap-[15px]">
@@ -61,7 +61,7 @@ function Second() {
                     <textarea name="" className='mt-4 border border-2  border-primary p-2 w-[97.1%] rounded' id="" cols="20" rows="5"></textarea>
                 </div>
 
-                <input type="submit" className='mx-[40%] bg-primary w-[5rem]  p-2 w-[97.1%] rounded' value='submit'/>
+                <input type="submit" className='bg-primary w-[5rem]  p-2 w-[97.1%] rounded' value='submit'/>
 
             </form>
       </div>
