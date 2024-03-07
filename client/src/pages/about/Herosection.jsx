@@ -3,8 +3,8 @@ import React from 'react';
 
 function Herosection() {
   return (
-    <div className='block mb-[20px]'>
-      <div className="h-[calc(100vh-30rem)] herobg w-screen bg-gray-400 relativ">
+    <div className='block mb-[20px] overflow-hidden'>
+      <div className="h-[calc(100vh-25rem)] herobg w-screen bg-gray-400 relative">
        {/* welcome text container */}
        <div className="w-[80rem] h-[12rem] absolute top-[7rem] left-[5rem] border-[3px] border-white ">
           <div className="text-white">
