@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useState, useEffect,useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
@@ -37,6 +37,10 @@ const Navbar = () => {
       }
     };
 
+
+
+
+
     // Attach the scroll event listener when the component mounts
     window.addEventListener('scroll', handleScroll);
 
@@ -51,6 +55,7 @@ const Navbar = () => {
   let hoverbg = 'focus:underline hover:underline decoration-solid decoration-4 decoration-rounded-lg decoration-primary underline-offset-[15px] h-full py-4 px-4';
 
   return (
+    
     <nav
     ref={navbarContainer}
       className={`h-[5rem] transition delay-150 duration-300 ease-in-out  flex items-center z-[100]

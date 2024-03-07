@@ -4,18 +4,21 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 
-import { RouterProvider,createBrowserRouter } from "react-router-dom";
+import { RouterProvider,createBrowserRouter, useLocation } from "react-router-dom";
 import Layout from "./components/Layout";
 import Error from "./pages/Error";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Contact from './pages/contact/Contact';
 
+
+
+
 const router = createBrowserRouter(
   [
     {
       path:'/',
-      element: <Layout/>,
+      element: <Layout />,
       errorElement: <Error/>,
       children:[
         {index:true,element:<Home/>},
@@ -25,7 +28,9 @@ const router = createBrowserRouter(
       ]
     }
   ]
-)
+);
+
+
 
 
 function App() {
