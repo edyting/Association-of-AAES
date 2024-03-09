@@ -58,14 +58,14 @@ const Navbar = () => {
     
     <nav
     ref={navbarContainer}
-      className={`h-[5rem] transition delay-150 duration-300 ease-in-out  flex items-center z-[100]
+      className={`h-[5rem]  top-0 font-poppins delay-150 ease-in-out  flex items-center z-[100]
       mx-0 transition-all px-8 bg-white   shadow duration-300 ${
         scrolled ? 'fixed  top-0 inset-x-0 shadow-md' : ''
       }`}
     >
-      <div className="container md:mx-a ">
+      <div className="container md:mx- ">
         <div className="md:flex hidden  items-center justify-between">
-          <div className="text-gray-800 text-xl font-bold">
+          <div className="text-gray-800 text-xl font-bold font-roboto">
             <Link to="/">LOGO</Link>
           </div>
 
@@ -100,10 +100,10 @@ const Navbar = () => {
         <div className="">
             {/* Responsive Menu for Small Screens */}
             {isOpen ? (
-            <div className="md:hidden absolute h-screen w-screen bg-gray-800 z-[100]">
+            <div className="md:hidden mx-0 top-0 left-0 absolute h-screen w-screen bg-gray-800 z-[100]">
                 
             <div className="text-white p-4 text-2xl mb-0 pb-0 font-bold flex justify-between">
-            <Link to="/">AAES</Link>
+            <Link to="/">LOGO</Link>
             <IoMdClose size={'2rem'} onClick={toggleNavbar}/>
           </div>
 

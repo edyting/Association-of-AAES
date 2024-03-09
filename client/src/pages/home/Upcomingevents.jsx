@@ -100,7 +100,7 @@ function Upcoming() {
   };
   
   return (
-    <div className='bg-darkbg  '>
+    <div className='bg-darkbg w-full '>
     {/* cards container */}
     {/* view name  */}
     <div className="">

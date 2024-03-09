@@ -6,13 +6,13 @@ import Newsletter from './Newsletter';
 
 function Footer() {
   return (
-    <div className='bg-darkbg w-screen'>
+    <div className='bg-darkbg w-screen '>
         {/* flex */}
-      <div className="w-[80%] mx-auto">
+      <div className="md:w-[80%] md:mx-auto">
             {/* top */}
-            <div className="flex py-4 justify-between flex-col md:flex-row text-white space-y-4 text-lg items-center">
+            <div className="md:flex md:py-4 grid grid-cols-2 mb-3 md:mb-0 justify-between  md:flex-row text-white space-y-4 text-lg items-center mx-2 md:mx-0">
                 {/* logo */}
-                <div className="">
+                <div className="col-span-2 text-center">
                     <h1>LOGO</h1>
                 </div>
                 {/* call us */}
@@ -55,10 +55,11 @@ function Footer() {
             {/* line */}
             <div className="bg-[#6c6d72] h-[0.5px] w-full"></div>
             {/* middle */}
-            <div className="text-white flex justify-between py-4">
+            <div className="text-white flex flex-col md:flex-row justify-between py-4">
                 {/* quick links */}
+                <div className="flex space-x-16 mb-2 md:mb-0 mx-4">
                 <div className="">
-                    <div className="flex items-center gap-1">
+                    <div className="flex  items-center gap-1">
                         <div className="h-2 w-2 bg-muted"></div>
                     <h1 className='text-primary text-lg font-bold capitaliz'>Quick links</h1>
                     </div>
@@ -71,7 +72,7 @@ function Footer() {
                 </div>
                 {/* social media */}
                 <div className="">
-                <div className="flex items-center gap-1">
+                <div className="flex  items-center gap-1">
                         <div className="h-2 w-2 bg-muted"></div>
                     <h1 className='text-primary text-lg font-bold capitalize'>social media</h1>
                     </div>
@@ -83,6 +84,7 @@ function Footer() {
                     </ul>
 
                 </div>
+                </div>
                 {/* newsletter */}
                 <div className="">
                     <Newsletter/>
@@ -91,7 +93,7 @@ function Footer() {
              {/* line */}
              <div className=" bg-[#6c6d72] h-[0.5px] w-full"></div>
             {/* bottom */}
-            <div className="py-2 text-white">
+            <div className="py-4 md:py-2 flex items-center justify-center text-white">
                     <p>@copyright 2024</p>
             </div>
       </div>

@@ -17,6 +17,10 @@ export default {
         'iconbg':'#474950'
       }
     },
+    fontFamily:{
+      poppins:["Poppins"],
+      roboto:["Roboto"]
+    }
   },
   plugins: [],
 }

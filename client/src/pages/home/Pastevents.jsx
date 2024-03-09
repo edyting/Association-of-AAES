@@ -15,4 +15,4 @@ function Pastevents() {
   )
 }
 
-export default Pastevents
+export default Pastevents;
