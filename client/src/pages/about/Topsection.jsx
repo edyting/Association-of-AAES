@@ -20,7 +20,7 @@ const Topsection = () => {
                     the readable content of a page when looking at its layout</p>
                  </div>
                  {/* image */}
-                 <div className="image w-full h-[70vh]">
+                 <div className="image w-full md:h-[50vh]">
                     <img className="w-full h-full "src={image} alt="" />
                  </div>
             </div>
