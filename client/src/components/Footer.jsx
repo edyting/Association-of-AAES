@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div className='bg-darkbg w-screen '>
         {/* flex */}
-      <div className="md:w-[80%] md:mx-auto">
+      <div className="md:w-[80%] mx-auto md:mx-12 lg:mx-auto">
             {/* top */}
             <div className="md:flex md:py-4 grid grid-cols-2 mb-3 md:mb-0 justify-between  md:flex-row text-white space-y-4 text-lg items-center mx-2 md:mx-0">
                 {/* logo */}
@@ -57,7 +57,7 @@ function Footer() {
             {/* middle */}
             <div className="text-white flex flex-col md:flex-row justify-between py-4">
                 {/* quick links */}
-                <div className="flex space-x-16 mb-2 md:mb-0 mx-4">
+                <div className="flex space-x-8 mb-2 md:mb-0 lg:mx-4">
                 <div className="">
                     <div className="flex  items-center gap-1">
                         <div className="h-2 w-2 bg-muted"></div>
@@ -86,7 +86,7 @@ function Footer() {
                 </div>
                 </div>
                 {/* newsletter */}
-                <div className="">
+                <div className="md:ml-6 lg:ml-0 ml-0">
                     <Newsletter/>
                 </div>
             </div>

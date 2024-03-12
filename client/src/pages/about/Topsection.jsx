@@ -4,7 +4,7 @@ import image from '../../components/images/image1.jpg'
 const Topsection = () => {
     return ( 
         <div className="">
-            <div className="container w-[80%] mx-auto text-center mb-12 ">
+            <div className="container md:w-full w-[80%] lg:w-[80%] mx-auto text-center mb-12 ">
                 {/* header */}
                  <div className="title pb-5">
                     <h1 className="md:text-6xl text-3xl font-bold">About</h1>

@@ -4,7 +4,7 @@ const Service = () => {
     return ( 
         
        <div >
-         <div className="md:w-[83%] md:mx-28 px-4 mb-12">
+         <div className="lg:w-[83%] w-[83%] md:mx-2 md:w-full lg:mx-28 px-4 mb-12">
             {/* top */}
             <div className="top flex items-center space-x-8 mb-4">
                 <h2 className='text-lg uppercase md:text-xl '> Executives</h2>
@@ -16,11 +16,8 @@ const Service = () => {
                 <h2 className="capitalize text-2xl md:text-4xl font-medium"> Meet our proud executives</h2>
             </div>
             {/* text */}
-            <div className="text text-md  md:w-[20.9%] mb-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum error voluptas et, fugit totam tenetur. Et maiores porro optio numquam.</p>
-            </div>
             {/* cards container */}
-            <div className="c-container  flex justify-between md:flex-row flex-col md:w-[80%] md:mx-auto space-y-4 md:space-y-0">
+            <div className="c-container  flex justify-between md:flex-row flex-col lg:w-[80%] md:w-full w-[80%] md:mx-auto space-y-4 md:space-y-0">
                 {cards.map((card)=>(
                     <div className="md:w-[30%] border-[1px] border-lightgray shadow p-4 text-center rounded-lg" key={card.title}>
                         {/* top */}

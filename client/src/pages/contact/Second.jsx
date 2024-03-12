@@ -5,7 +5,7 @@ function Second() {
     <div className=' flex flex-col md:flex-row '>
      {/* leftside */}
 
-      <div className="bg-muted md:w-[25rem] md:mx-[10rem]  p-4 rounded-lg m-2">
+      <div className="bg-muted md:w-[25rem] lg:mx-[10rem]  p-4 rounded-lg m-2">
         {/* contact us */}
       <div className="">
         <h1 className='font-bold text-lg'>Contact Us </h1>
