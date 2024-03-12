@@ -2,10 +2,10 @@ import React from 'react'
 
 function Second() {
   return (
-    <div className=' flex '>
+    <div className=' flex flex-col md:flex-row '>
      {/* leftside */}
 
-      <div className="bg-muted w-[25rem] mx-[10rem]  p-4 rounded-lg m-2">
+      <div className="bg-muted md:w-[25rem] md:mx-[10rem]  p-4 rounded-lg m-2">
         {/* contact us */}
       <div className="">
         <h1 className='font-bold text-lg'>Contact Us </h1>
@@ -41,12 +41,12 @@ function Second() {
       </div>
 
       {/* right side */}
-      <div className="bg-blue-100 w-[34rem] pt- p-2 rounded-xl mt-4">
+      <div className=" md:w-[34rem] pt- p-2 rounded-xl mt-4">
             <form action="">
 
-                <div className=" flex gap-[15px]">
-                <input className='border  border-primary rounded p-2 border-2' type="text" placeholder='Name' />
-                <input className='border border-primary rounded p-2 border-2' type="Last Name"  placeholder='Last Name'/>
+                <div className=" flex flex-col md:flex-row gap-[15px]">
+                <input className='border w-[97.1%] md:w-full border-primary rounded p-2 border-2' type="text" placeholder='Name' />
+                <input className='border w-[97.1%] md:w-full border-primary rounded p-2 border-2' type="Last Name"  placeholder='Last Name'/>
                 </div>
 
                 <div className="">
